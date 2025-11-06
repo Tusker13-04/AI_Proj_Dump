@@ -1,0 +1,223 @@
+{
+  "experiment_id": "frontend_browsing_replicas_4_users_5",
+  "target_service": "frontend",
+  "replica_count": 4,
+  "load_users": 5,
+  "duration_minutes": 15,
+  "collection_start": "2025-11-06T05:59:13.596398",
+  "load_test": {
+    "total_requests": 20,
+    "successful_requests": 0,
+    "failed_requests": 20,
+    "success_rate": 0.0,
+    "avg_response_time": 1.1,
+    "max_response_time": "12",
+    "min_response_time": "0",
+    "throughput": 0.06206053384471213,
+    "start_time": "2025-11-06T06:05:54.518602",
+    "end_time": "2025-11-06T06:06:20.722491",
+    "duration_seconds": 26.203889,
+    "script_path": "jmeter_scripts/frontend_browsing_replicas_4_users_5_load.jmx"
+  },
+  "metrics": {
+    "cpu_cores": {
+      "_type": "DataFrame",
+      "shape": [
+        71,
+        11
+      ],
+      "columns": [
+        "cpu",
+        "endpoint",
+        "id",
+        "instance",
+        "job",
+        "metrics_path",
+        "namespace",
+        "node",
+        "pod",
+        "service",
+        "value"
+      ]
+    },
+    "mem_bytes": {
+      "_type": "DataFrame",
+      "shape": [
+        64,
+        11
+      ],
+      "columns": [
+        "__name__",
+        "endpoint",
+        "id",
+        "instance",
+        "job",
+        "metrics_path",
+        "namespace",
+        "node",
+        "pod",
+        "service",
+        "value"
+      ]
+    },
+    "net_rx_bytes": {
+      "_type": "DataFrame",
+      "shape": [
+        71,
+        1
+      ],
+      "columns": [
+        "value"
+      ]
+    },
+    "net_tx_bytes": {
+      "_type": "DataFrame",
+      "shape": [
+        64,
+        1
+      ],
+      "columns": [
+        "value"
+      ]
+    },
+    "pod_restarts": {
+      "_type": "DataFrame",
+      "shape": [
+        72,
+        10
+      ],
+      "columns": [
+        "__name__",
+        "container",
+        "endpoint",
+        "instance",
+        "job",
+        "namespace",
+        "pod",
+        "service",
+        "uid",
+        "value"
+      ]
+    },
+    "replica_count": {
+      "_type": "DataFrame",
+      "shape": [
+        29,
+        10
+      ],
+      "columns": [
+        "__name__",
+        "container",
+        "deployment",
+        "endpoint",
+        "instance",
+        "job",
+        "namespace",
+        "pod",
+        "service",
+        "value"
+      ]
+    },
+    "node_cpu_util": {
+      "_type": "DataFrame",
+      "shape": [
+        21,
+        1
+      ],
+      "columns": [
+        "value"
+      ]
+    },
+    "node_mem_util": {
+      "_type": "DataFrame",
+      "shape": [
+        30,
+        8
+      ],
+      "columns": [
+        "container",
+        "endpoint",
+        "instance",
+        "job",
+        "namespace",
+        "pod",
+        "service",
+        "value"
+      ]
+    },
+    "network_activity_rate": {
+      "_type": "DataFrame",
+      "shape": [
+        71,
+        1
+      ],
+      "columns": [
+        "value"
+      ]
+    },
+    "processing_intensity": {
+      "_type": "DataFrame",
+      "shape": [
+        71,
+        11
+      ],
+      "columns": [
+        "cpu",
+        "endpoint",
+        "id",
+        "instance",
+        "job",
+        "metrics_path",
+        "namespace",
+        "node",
+        "pod",
+        "service",
+        "value"
+      ]
+    },
+    "service_stability": {
+      "_type": "DataFrame",
+      "shape": [
+        72,
+        1
+      ],
+      "columns": [
+        "value"
+      ]
+    },
+    "resource_pressure": {
+      "_type": "DataFrame",
+      "shape": [
+        71,
+        1
+      ],
+      "columns": [
+        "value"
+      ]
+    }
+  },
+  "collection_end": "2025-11-06T06:06:20.767137",
+  "data_quality": {
+    "status": "warnings",
+    "warnings": [
+      "High variability in cpu_cores: CV=45.7% (limit: 10%)",
+      "High variability in mem_bytes: CV=26.3% (limit: 10%)"
+    ],
+    "checks": {
+      "completeness": {
+        "passed": true,
+        "details": ""
+      },
+      "nan_values": {
+        "passed": true,
+        "details": ""
+      },
+      "stability": {
+        "passed": "False",
+        "details": "mem_bytes: CV=26.3% (unstable)"
+      }
+    }
+  },
+  "status": "completed_with_warnings",
+  "unified_csv_path": "training_data/frontend_browsing_replicas_4_users_5.csv"
+}
