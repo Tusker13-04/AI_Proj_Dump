@@ -1,3 +1,16 @@
+
+# Replace LEFT curly double quote " with straight "
+sed -i 's/â/"/g' ~/ali_ws/train_gemma.py
+
+# Replace RIGHT curly double quote " with straight "
+sed -i 's/â/"/g' ~/ali_ws/train_gemma.py
+
+# Replace LEFT curly single quote ' with straight '
+sed -i "s/â/'/g" ~/ali_ws/train_gemma.py
+
+# Replace RIGHT curly single quote ' with straight '
+sed -i "s/â/'/g" ~/ali_ws/train_gemma.py
+
 #!/usr/bin/env python3
 """
 train_v5.py — Teacher-Student KD | Autonomous Self-Healing Training
